@@ -82,7 +82,7 @@ a:hover {
     color: #0b1440;
   }
   a.active,
-a:hover {
+  a:hover {
   background: #F89A3D;
   transition: 0.5s;
-}
+  }
