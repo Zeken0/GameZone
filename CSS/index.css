@@ -16,6 +16,7 @@ nav {
 }
 
 label.logo {
+  font-family: "wallpoet";
   color: white;
   font-size: 40px;
   line-height: 80px;
@@ -83,6 +84,7 @@ a:hover {
   }
   a.active,
   a:hover {
-  background: #F89A3D;
-  transition: 0.5s;
+    background: #f89a3d;
+    transition: 0.5s;
   }
+}
