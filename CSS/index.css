@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 body {
+  height: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -56,6 +57,27 @@ a:hover {
 }
 #check {
   display: none;
+}
+.footer {
+  background: #0b1440;
+  color: white;
+  height: 400px;
+  position: relative;
+}
+.footer-content {
+  border: solid red 2px;
+  height: 350px;
+}
+.footer .footer-bottom {
+  background: #1a2e94;
+  color: white;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
 }
 @media (max-width: 952px) {
   label.logo {
