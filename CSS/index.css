@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
+
 body {
+  background-color: #f9f9f9;
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -29,6 +30,7 @@ nav ul {
   float: right;
   margin-right: 20px;
 }
+
 nav a {
   color: white;
   text-transform: uppercase;
@@ -36,16 +38,19 @@ nav a {
   padding: 7px 15px;
   border-radius: 3px;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 a.active,
 a:hover {
   background: #1a2e94;
   transition: 0.5s;
 }
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -55,22 +60,122 @@ a:hover {
   cursor: pointer;
   display: none;
 }
+
 #check {
   display: none;
 }
+
 .footer {
   background: #0b1440;
   color: white;
   height: 400px;
   position: relative;
 }
-.footer-content {
+
+.footer .footer-content {
   border: solid red 2px;
   height: 350px;
+  display: flex;
 }
-.footer .footer-bottom {
-  background: #1a2e94;
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  border: solid 1px white;
+  padding: 25px;
+}
+
+.footer .footer-content h1 {
   color: white;
+  margin-bottom: 8px;
+}
+
+.footer .footer-content h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer .footer-content .about p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+.footer .footer-content .about h1 span {
+  color: #f89a3d;
+}
+.footer .footer-content .about .socials a {
+  color: white;
+  border: solid white;
+  width: 45px;
+  height: 41px;
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.footer .footer-content .about .socials a:hover {
+  color: #f89a3d;
+  transition: all 0.3s;
+  background-color: unset;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.footer .footer-content .links ul a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-left: 30px;
+}
+
+.footer .footer-content .links ul a:hover {
+  color: #f89a3d;
+  margin-left: 50px;
+  transition: all 0.5s;
+  background-color: unset;
+}
+
+.footer .footer-content .contact-form .contact-input {
+  background-color: white;
+  color: black;
+  width: 400px;
+  margin-bottom: 10px;
+  line-height: 15px;
+  padding: 0.9rem 1.4rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+  background-color: #f9f9f9;
+}
+
+.footer .footer-content .contact-form .btn-big {
+  color: white;
+  background-color: #f89a3d;
+  padding: 0.7rem 1.3rem;
+  line-height: 1.3rem;
+  border-radius: 5px;
+  border-color: #0b1440;
+  float: right;
+}
+
+.footer .footer-content .contact-form .btn-big:hover {
+  background-color: white;
+  color: #f89a3d;
+}
+
+.footer .footer-bottom {
+  background: #060d2d;
+  color: #f9f9f9;
   height: 50px;
   width: 100%;
   text-align: center;
@@ -79,19 +184,23 @@ a:hover {
   left: 0px;
   padding-top: 20px;
 }
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
     padding-left: 5%;
   }
+
   nav a {
     font-size: 16px;
   }
 }
+
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
   }
+
   nav ul {
     position: fixed;
     width: 100%;
@@ -101,9 +210,11 @@ a:hover {
     left: 0;
     text-align: center;
   }
+
   nav a {
     color: #0b1440;
   }
+
   a.active,
   a:hover {
     background: #f89a3d;
