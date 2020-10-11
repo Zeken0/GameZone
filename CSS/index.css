@@ -7,8 +7,10 @@
 
 body {
   background-color: #f9f9f9;
-  height: 100%;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding-bottom: 100%;
+  min-height: 100vh;
 }
 
 nav {
@@ -69,7 +71,9 @@ a:hover {
   background: #0b1440;
   color: white;
   height: 400px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer .footer-content {
