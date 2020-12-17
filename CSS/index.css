@@ -77,7 +77,6 @@ a:hover {
 }
 
 .footer .footer-content {
-  border: solid red 2px;
   height: 350px;
   display: flex;
 }
